@@ -8,7 +8,7 @@ const cors = require("cors");
 
 
 // db connection
-db();
+db();;
 
 // middleware
 app.use(express.json());
