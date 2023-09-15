@@ -8,7 +8,7 @@ const dbConnection = () => {
     }
     
     try {
-        mongoose.connect('mongodb+srv://monogodb:root@cluster0.wckxzy4.mongodb.net/workoutGenerator?retryWrites=true&w=majority', connect)
+        mongoose.connect(process.env.MONODB_URI, connect)
         .then((res) => {
             if(res){
                 console.log("Successfully connected!");
